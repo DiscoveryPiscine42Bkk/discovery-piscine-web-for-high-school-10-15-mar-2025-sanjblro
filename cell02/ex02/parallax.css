@@ -1,0 +1,41 @@
+body {
+    margin:0;
+}
+.parallax {
+    position: relative;
+    background-image: url(https://getwallpapers.com/wallpaper/full/d/8/f/1260379-free-spongebob-squarepants-wallpaper-hd-1920x1080-hd-for-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+display: flex;
+align-items: center;
+justify-content: center;
+background-attachment: fixed;
+}
+.parallax-second {
+    background-image: url(https://getwallpapers.com/wallpaper/full/9/2/d/813547-new-wallpapers-of-funny-faces-1920x1200.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+display: flex;
+justify-content: center;
+align-items: center;
+background-attachment: fixed;
+}
+.parallax-second-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+.blackblock {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-size: 20px;
+ }
+ .content p {
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+ }
