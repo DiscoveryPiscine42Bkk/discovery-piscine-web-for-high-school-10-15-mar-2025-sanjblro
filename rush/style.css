@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+.firstpage {
+    background-image: url(https://wallpapercat.com/w/full/e/4/d/5820420-3840x2160-desktop-hd-cute-pink-background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.firstpage h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botton {
+    color: white;
+    background-color: black;
+}
