@@ -1,0 +1,47 @@
+body {
+    margin: 0;  
+}
+.main {
+    background-image: url(https://i.pinimg.com/originals/9b/98/57/9b985780e9bfc401da318073e02865f8.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-align: center;
+}
+.main h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px rgb(76, 0, 147);
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    display: flex;
+    font-size: 2rem;
+    padding: 0 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.btn {
+    padding: 15px 50px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(195, 136, 251);
+    box-shadow:0 5px 10px rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(253, 147, 219);
+    transform: scale(1.1);
+}
