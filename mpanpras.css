@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 100vh;
+        background-repeat: no-repeat;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-container .navbar-menu {
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+.navbar-container .navbar-menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7 ease;
+    white-space: nowrap;
+}
+.navbar-container .navbar-menu li a:hover {
+    color: black;
+    background: rgb(239, 139, 255);
+    border: 2px solid white;
+}
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+    transition: all 0.3 ease-in-out;
+}
+
+@media (max-width: 880px) {
+    .navbar {
+        backdrop-filter: none;
+    }
+    .navbar-container .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem;
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    .navbar-toggle {
+        display: block;
+        z-index: 999;
+    }
+    .navbar-container .navbar-menu.active {
+        display: flex;
+    }
+}
+.parallax {
+    background-image: linear-gradient(to bottom,#fcb1b6,#D76C82);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    height: 220vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.portfoilo h1 {
+    font-size: 100px;
+    color: black;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding-top: 50px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 5px 5px rgb(239, 157, 213);
+}
+.image{
+    justify-content: center;
+    display: flex;
+}
+.image .profile-image img{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-radius: 15px;
+}
+.parallax p
+{
+    color: grey;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.skill-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    background-color: white;
+    width: 1000px;
+    height: 300px;
+}
+ .skill-box h1{
+    font-size: 50px;
+    padding-top: 20px;
+ }
+.skill-box ul {
+    padding-left: 20px; 
+    list-style-type: none; 
+    font-size: 60px;
+}
+
+.skill-box li {
+    margin-bottom: 10px; 
+    color: rgb(92, 92, 92);
+    font-size: 30px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.parallax-second h1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.image-second {
+margin: 10px;
+display: flex; 
+flex-direction: column;
+justify-content: space-between; 
+}
+
+.image-second img{
+    width: 400px;
+    height: 300px;
+}
+.image-second .row {
+    display: flex;
+    justify-content: space-around; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+.parallax-third{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background-color: rgb(244, 206, 231);
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+.parallax-third h1 {
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.parallax-third h2 {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40%;
+    height: 20%;
+} 
+.parallax-third .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.parallax-third .link i {
+    text-align: left;
+    font-size: 50px; 
+   color: rgb(0, 0, 0); 
+   transition: transform 0.3s ease; 
+   padding: 10px;
+   margin: 0;
+}
+.parallax-third .link:hover i {
+    transform: scale(1.4);
+}
+.socialmedia .row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; 
+    margin-left: 75px;}
+
+    @media (max-width: 880px) {
+        .portfoilo h1 {
+            font-size: 60px;
+        }
+    
+        .skill-box {
+            width: 90%;
+            height: auto;
+        }
+    
+        .image .profile-image img {
+            width: 80%;
+        }
+    
+        .parallax p {
+            font-size: 20px;
+        }
+    
+        .image-second img {
+            width: 90%;
+            height: auto;
+    
+        .parallax-third {
+            width: 90%;
+        }
+    
+        .socialmedia .row {
+            margin-left: 0;
+            justify-content: center;
+        }
+    }
+    }
+    @media (max-width: 600px) {
+        .navbar-container .navbar-menu {
+            gap: 1rem;
+            padding: 3rem 1.5rem;
+        }
+    
+        .portfoilo h1 {
+            font-size: 40px;
+        }
+    
+        .parallax {
+            height: 100vh;
+        }
+    
+        .parallax p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    
+        .parallax-third .link i {
+            font-size: 40px;
+        }
+    }
