@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url(https://w0.peakpx.com/wallpaper/471/414/HD-wallpaper-colorful-background-ultra-aero-colorful-beautiful-yellow-abstract-color-pink-design-light-background-cyan-colors-bright-colourful-shades-vivid-soft-blur-gradient-pale-8k-lightcolored.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -59,9 +60,7 @@ body {
     white-space: nowrap;
 }
 .navbar-container .navbar-menu li a:hover {
-    color: black;
-    background: rgb(255, 173, 222);
-    border: 2px solid white;
+    color: rgb(86, 86, 86);
 }
 .navbar-toggle {
     display: none;
@@ -105,35 +104,7 @@ body {
     }
 }
 .infos {
-    background-image: linear-gradient(to bottom,#ffc9ff,#bef6ff);
-    background-size: cover;
-    background-position: center;
-    height: 100vh - 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-}
-.infos h1 {
-    font-family: "Bagel Fat One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-shadow: 5px 5px rgb(239, 157, 213);
-}
-.about-image {
-    width: 60%;
-    max-width: 400px;
-    margin-top: 50px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-.certificates {
-    background-image: linear-gradient(to bottom,#ffc9ff,#bef6ff);
+    background-image: linear-gradient(to bottom,#fcb1b6,#a8f2eb);
     background-size: cover;
     background-position: center;
     height: 100vh - 80px;
@@ -145,7 +116,52 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 20px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+.infos {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.infos p {
+    color: darkgrey;
+}
+.about-image {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.certificates {
+    background-image: linear-gradient(to bottom,#fcb1b6,#a8f2eb);
+    color: #000000;
+    background-size: cover;
+    background-position: center;
+    height: 100vh - 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.certificates h1 {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
 }
 .row {
     display: flex;
@@ -161,26 +177,25 @@ body {
     object-fit: cover;
     box-sizing: border-box;
 }
-
-.info-box {
-    font-family: "Bagel Fat One", system-ui;
-    font-weight: 400;
-    font-style: normal;
+.info-box p{
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 60px;
-    width: 50%;
-    height: 50%;
+    width: 50%px;
+    height: 50%px;
+    line-height: 2;
     text-align: center;
     font-size: 20px;
 }
 .contact {
-    background-color: #B03052;
+    background-color: #ffc8d6;
+    border-radius: 20px;
     background-size: cover;
     background-position: center;
-    height: 100vh - 80px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +204,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    margin: 50px;
 }
 .contact h1 {
     color: white;
@@ -198,12 +214,20 @@ body {
     text-decoration: none;
 }
 .social-media i{
-    font-size: 1.5rem;
+    font-size: 50px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 249, 249);
     transition: 0.3s ease;
+    padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 20px;
 }
 .social-media i:hover {
-    color: hotpink;
+    transform: scale(1.4);
 }
+
+.contact h2 {
+    color: rgb(246, 249, 180);
+    text-shadow: 2px 2px 5px rgb(243, 248, 150);
+}
+
